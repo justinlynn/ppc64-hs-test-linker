@@ -1,0 +1,25 @@
+name:                hs-test-linker
+version:             0.1.0.0
+github:              "justinlynn/ppc64-hs-test-linker"
+license:             BSD3
+author:              "J Lynn"
+maintainer:          "j@jaesharp.com"
+copyright:           "2018 Justin Lynn"
+
+extra-source-files:
+  - c-bits/library.c
+  - c-bits/library.h
+
+description:         "No"
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  hs-test-linker:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -debug
+    dependencies:
+    - ghci
