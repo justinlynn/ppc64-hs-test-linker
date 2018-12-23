@@ -1,6 +1,5 @@
 module Main where
 
-import Lib
 import GHCi.ObjLink as ObjLink
 
 main :: IO ()
