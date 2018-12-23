@@ -4,10 +4,10 @@ import GHCi.ObjLink as ObjLink
 
 main :: IO ()
 main = do
-  putStrLn "InitLinker"
+  putStrLn "InitLinker Phase"
   ObjLink.initObjLinker ObjLink.RetainCAFs
-  putStrLn "LoadObj"
+  putStrLn "LoadObj Phase"
   ObjLink.loadObj "c-bits/library.o"
-  putStrLn "ResolveObj"
+  putStrLn "ResolveObj Phase"
   ObjLink.resolveObjs
-  putStrLn "Linked"
+  putStrLn "Linked Phase"
